@@ -1,0 +1,21 @@
+#!/usr/bin/ruby -w
+# coding: utf-8
+
+#$LOAD_PATH.unshift("..") if !$LOAD_PATH.include?("..")
+$LOAD_PATH.unshift("lib") if !$LOAD_PATH.include?("lib")
+require "facebook_dumper"
+
+dumper = FacebookDumper::FacebookFriendsDumper.new
+dumper.run(ARGV)
+
+#.main(ARGV)
+#unless ARGV[0] == "--test"
+#else
+#  ARGV.shift
+#  require "test/unit"
+#  class TestFacebookFriendsDump < Test::Unit::TestCase
+#    def test_it
+#      assert_equal(2, 1+1)
+#    end
+#  end
+#end

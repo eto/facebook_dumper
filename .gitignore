@@ -6,6 +6,9 @@
 /pkg/
 /spec/reports/
 /tmp/
+Gemfile.lock
+*~
+facebook-friends.txt
 
 # rspec failure tracking
 .rspec_status
